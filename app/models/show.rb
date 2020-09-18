@@ -12,8 +12,8 @@ class Show < ActiveRecord::Base
 #binding.pry
   end
 
-  def build_network(attr)
+  #def build_network(attr)
     #net = Show.find_or_create_by(id: = nil, self.name, :network_id = nil)
-  end
+  #end
 
 end
