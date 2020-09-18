@@ -4,16 +4,9 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-    chars = []
-  #  binding.pry
-    chars = self.characters.collect { |t|
-      chars << t.name
-    }
-#binding.pry
+    self.characters.map { |chars|
+    chars.actor.full_name
+  }
   end
-
-  #def build_network(attr)
-    #net = Show.find_or_create_by(id: = nil, self.name, :network_id = nil)
-  #end
 
 end
